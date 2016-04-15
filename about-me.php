@@ -1,12 +1,21 @@
 <?php
 
-$a = 10;
-$b = '10';
+// do while loop
+$a = 3;
 
-if ($a === $b) {
-    echo "$a is identical to $b";
-} elseif ($a == $b) {
-    echo "$a is equal to $b";
-} else {
-    echo "$a is not equal to $b";
-}  
+echo "Do While: \n";
+
+do {
+    $a++;
+    echo $a.PHP_EOL;
+} while ($a < 3);
+
+// while loop
+echo "While: \n";
+
+$b = 3;
+
+while ($b < 3) {
+    $b++;
+    echo $b.PHP_EOL;
+}
