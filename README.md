@@ -1,0 +1,1 @@
+This repository contains the exercises that I did in Codeup bootcamp when learning PHP
