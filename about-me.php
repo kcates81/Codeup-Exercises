@@ -1,15 +1,15 @@
 <?php
 
-// example of a foreach
+// example of a foreach with keys
 $names = [
-    "Lorena",
-    "Melissa",
-    "Nikki",
-    "Edric",
-    "Marcus",
-    "Pancho"
+    "lvillanueva"   => "Lorena",
+    "mel"           => "Melissa",
+    "niknik"        => "Nikki",
+    "eddy"          => "Edric",
+    "markymark"     => "Marcus",
+    "pancho"        => "Pancho"
 ];
 
-foreach ($names as $studentName) {
-   echo "Hey everybody, say hello to {$studentName}\n";
+foreach ($names as $userName => $studentName) {
+   echo "Hey everybody, say hello to $studentName's username is $userName\n";
 }
