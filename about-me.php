@@ -1,21 +1,8 @@
 <?php
 
-// do while loop
-$a = 3;
+// Passing Command Line Arguments 
+if ($argc == 3) {
+    echo "arg1 is {$argv[1]} and arg2 is "
+};
 
-echo "Do While: \n";
-
-do {
-    $a++;
-    echo $a.PHP_EOL;
-} while ($a < 3);
-
-// while loop
-echo "While: \n";
-
-$b = 3;
-
-while ($b < 3) {
-    $b++;
-    echo $b.PHP_EOL;
-}
+var_dump($argv);
