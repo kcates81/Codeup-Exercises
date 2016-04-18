@@ -10,16 +10,24 @@ $things = array('Sgt. Pepper',
     (string) 11)
 ;
 
-// for ($i=0; $i < (count($things)); $i++) { 
-
-//     $items = $things[$i];
-//     if (is_scalar($items)) {
-//         echo "{$items} is a scalar\n";
-//     }  
-// }
-
+// foreach loop that checks if an item is a scalar 
 foreach ($things as $item) {
-    if (is_scalar($item)) {
-        echo "{$item} is a scalar\n";
+   if (is_integer($item)) {
+       echo "{$item} is an integer\n";
+    } elseif (is_float($item)) {
+       echo "{$item} is a float\n";
+    } elseif (is_bool($item)) {
+       echo "{$item} is a boolean\n";
+    } elseif (is_array($item)) {
+        echo "This is an array: \n";
+       foreach ($item as $element) {
+              echo "$element\n";
+          }   
+    } elseif (is_null($item)) {
+       echo "{$item} is null\n";
+    } elseif (is_string($item)) {
+        echo "{$item} is a string\n";
+    } elseif (is_scalar($item)) {
+        echo "{$item}is a scalar\n";
     }
 }
