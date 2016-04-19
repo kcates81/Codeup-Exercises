@@ -1,6 +1,6 @@
 <?php
 
-for ($i= 99; $i >= 0 ; $i--) { 
+for ($i = 99; $i >= 0 ; $i--) { 
     echo "{$i} bottles of beer on the wall, {$i} bottles of beer\n";
     echo "Take one down, pass it around\n";
 
