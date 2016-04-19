@@ -21,3 +21,11 @@ function divide($a, $b)
 }
 
 // Add code to test your functions here
+
+echo add(5, 5).PHP_EOL;
+
+echo subtract(5,5).PHP_EOL;
+
+echo multiply(5, 5).PHP_EOL;
+
+echo divide(5, 5). PHP_EOL;
