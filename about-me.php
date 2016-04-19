@@ -11,7 +11,7 @@ echo sayHello();
 // this function illustrates the limitations of using echo within a function
 function add($a, $b)
 {
-    echo $a + $b.PHP_EOL;
+    return $a + $b.PHP_EOL;
 }
 
 var_dump(add(5,12) * add(6, 4)).PHP_EOL;
