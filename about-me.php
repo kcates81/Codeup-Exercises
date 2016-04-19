@@ -1,33 +1,25 @@
 <?php
 
-// example of break
-for ($i = 1; $i <= 100; $i++) {
-    echo $i . "\n";
-    if ($i == 5) {
+// example of switch statement
+$value = 'Hello!';
+
+switch (gettype($value)) {
+    case 'integer':
+        echo '$value is an integer';
         break;
-    }
+    case 'float':
+        echo '$value is a float';
+        break;
+    case 'boolean':
+        echo '$value is a boolean';
+        break;
+    case 'array':
+        echo '$value is an array';
+        break;
+    case 'null':
+        echo '$value is null';
+        break;
+    case 'string':
+        echo '$value is a string';
+        break;
 }
-
-// example of continue
-for ($i = 1; $i <= 10; $i++) {
-    echo $i . "\n";
-    if ($i % 2 == 0) {
-        continue;
-    }
-    echo "^ that is an odd number.\n";
-}
-
-// nested loop example
-$numbers = array(1, 2, 3, 4, 5);
-// Loop 1
-foreach ($numbers as $key => $value) {
-    echo "{$value}\n";
-    // Loop 2
-    for ($i = 1; $i <= 10; $i++) {
-        if ($i == 2) {
-            echo "{$i}\n";
-            break 2;
-        }
-    }
-}
-echo "done!\n";
