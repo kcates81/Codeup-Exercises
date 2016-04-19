@@ -5,7 +5,7 @@ function add($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a + $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON!\n";
+        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
     } 
 }
 
@@ -14,7 +14,7 @@ function subtract($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a - $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON!\n";
+        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
     }
 }
 
@@ -23,7 +23,7 @@ function multiply($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a * $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON!\n";
+        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
     }
 }
 
@@ -34,7 +34,7 @@ function divide($a, $b)
     }elseif (is_numeric($a) && is_numeric($b)){
         return $a / $b;
     } else{
-        return "DANGER! DANGER, WILL ROBINSON!\n";
+        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
     }
 }
 
@@ -43,7 +43,7 @@ function modulus ($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a % $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON!\n";
+        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
     }
 }
 
@@ -51,7 +51,7 @@ function modulus ($a, $b)
 
 echo add(5, '5').PHP_EOL;
 
-echo subtract(5,array (5)).PHP_EOL;
+echo subtract(5, false).PHP_EOL;
 
 echo multiply(5, 'poop').PHP_EOL;
 
