@@ -8,10 +8,10 @@ function sayHello()
 
 echo sayHello();
 
-// another function example
+// this function illustrates the limitations of using echo within a function
 function add($a, $b)
 {
-    return $a + $b;
+    echo $a + $b.PHP_EOL;
 }
 
-echo add(5, 4).PHP_EOL;
+var_dump(add(5,12) * add(6, 4)).PHP_EOL;
