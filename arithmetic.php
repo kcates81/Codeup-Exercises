@@ -1,11 +1,16 @@
 <?php
 
+function throwErrorMessage ($a, $b)
+{
+    return "DANGER! DANGER, WILL ROBINSON! Either {$a} or {$b} is not a number!\n";
+}
+
 function add($a, $b)
 {
     if (is_numeric($a) && is_numeric($b)) {
         return $a + $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
+        echo throwErrorMessage ($a, $b);
     } 
 }
 
@@ -14,7 +19,7 @@ function subtract($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a - $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
+        echo throwErrorMessage ($a, $b);
     }
 }
 
@@ -23,7 +28,7 @@ function multiply($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a * $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
+        echo throwErrorMessage ($a, $b);
     }
 }
 
@@ -33,8 +38,8 @@ function divide($a, $b)
         return "Uhuh...you can't do that!\n";
     }elseif (is_numeric($a) && is_numeric($b)){
         return $a / $b;
-    } else{
-        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
+    } else {
+       echo throwErrorMessage ($a, $b);
     }
 }
 
@@ -43,7 +48,7 @@ function modulus ($a, $b)
     if (is_numeric($a) && is_numeric($b)) {
         return $a % $b;
     } else {
-        return "DANGER! DANGER, WILL ROBINSON! Something is wrong with either {$a} or {$b}!\n";
+      echo throwErrorMessage ($a, $b);
     }
 }
 
