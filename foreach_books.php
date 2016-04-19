@@ -24,8 +24,9 @@ $books = array(
 );
 
 foreach ($books as $bookTitle => $bookArray) {
+    echo "==================================\n";
+    echo "{$bookTitle}\n";
     foreach ($bookArray as $key => $value) {
-        echo "$bookTitle's $key is $value\n";
-        echo "===========================\n";
+        echo "{$key}: {$value}\n";
     }
 }
