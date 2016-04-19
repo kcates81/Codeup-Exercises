@@ -2,37 +2,57 @@
 
 function add($a, $b)
 {
-    return $a + $b;
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a + $b;
+    } else {
+        return "DANGER! DANGER, WILL ROBINSON!\n";
+    } 
 }
 
 function subtract($a, $b)
 {
-    return $a - $b;
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a - $b;
+    } else {
+        return "DANGER! DANGER, WILL ROBINSON!\n";
+    }
 }
 
 function multiply($a, $b)
 {
-    return $a * $b;
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a * $b;
+    } else {
+        return "DANGER! DANGER, WILL ROBINSON!\n";
+    }
 }
 
 function divide($a, $b)
 {
-    return $a / $b;
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a / $b;
+    } else {
+        return "DANGER! DANGER, WILL ROBINSON!\n";
+    }
 }
 
 function modulus ($a, $b)
 {
-    return $a % $b;
+    if (is_numeric($a) && is_numeric($b)) {
+        return $a % $b;
+    } else {
+        return "DANGER! DANGER, WILL ROBINSON!\n";
+    }
 }
 
 // Add code to test your functions here
 
-echo add(5, 5).PHP_EOL;
+echo add(5, '5').PHP_EOL;
 
-echo subtract(5,5).PHP_EOL;
+echo subtract(5,array (5)).PHP_EOL;
 
-echo multiply(5, 5).PHP_EOL;
+echo multiply(5, 'poop').PHP_EOL;
 
 echo divide(5, 5). PHP_EOL;
 
-echo modulus(5, 5). PHP_EOL;
+echo modulus(true, 5). PHP_EOL;
