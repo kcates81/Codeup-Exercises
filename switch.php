@@ -32,3 +32,20 @@ switch($dayOfWeek) {
         echo "Sunday\n";
         break;
  };
+
+// this if statement should give the same output
+if ($dayOfWeek == 1) {
+    echo "Monday\n";
+} elseif ($dayOfWeek == 2) {
+    echo "Tuesday\n";
+} elseif ($dayOfWeek == 3) {
+    echo "Wednesday\n";
+} elseif ($dayOfWeek == 4) {
+    echo "Thursday\n";
+} elseif ($dayOfWeek == 5) {
+    echo "Friday\n";
+} elseif ($dayOfWeek == 6) {
+    echo "Saturday\n";
+} elseif ($dayOfWeek == 7) {
+    echo "Sunday\n";
+}
