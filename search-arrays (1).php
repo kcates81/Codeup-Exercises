@@ -4,9 +4,9 @@ $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
-function findArray($a, $name)
+function findArray($a, $person)
 {
-    $result = array_search($name, $a);
+    $result = array_search($person, $a);
 
     if ($result !== FALSE) {
         return TRUE.PHP_EOL;
@@ -28,7 +28,6 @@ function arrayMatch ($names, $compare)
     } 
 
     return $count;
-
 }
 
 echo arrayMatch($names, $compare);
