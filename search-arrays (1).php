@@ -18,7 +18,17 @@ function findArray($a, $name)
 echo findArray($names, 'Tina');
 echo findArray($names, 'Bob');
 
-function arrayMatch ()
+function arrayMatch ($names, $compare)
 {
+    $count = 0;
+    foreach ($names as $person) {
+        if (findArray($compare, $person)) {
+            $count++;
+        }
+    } 
+
+    return $count;
 
 }
+
+echo arrayMatch($names, $compare);
