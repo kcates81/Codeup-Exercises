@@ -13,9 +13,29 @@ function parseContacts($filename)
 
     fclose($handle);
 
-    $contacts = explode("\n", $contents);
+    $contacts = explode("\n", trim($contents));
 
-    return $contacts;
+    $newArray = array();
+    foreach ($contacts as $key => $value) {
+
+        $details = explode('|', $value); // correct
+
+        $areaCode = substr($details[1], -10, 3);
+
+        $exchange = substr($details[1], -7, 3);
+
+        $sln = substr($details[1], -4, 4);
+
+        $number = $areaCode.'-'.$exchange.'-'.$sln;
+
+        $contacts = array('name' => $details[0], 'phone' => $number);
+
+        array_push($newArray, $contacts);
+        
+    }
+
+    return $newArray;
+
 }
 
 var_dump(parseContacts('contacts.txt'));
