@@ -4,7 +4,7 @@
     $log = new Log ();
     $log -> fileName = 'log-{$logDate}.log';
 
-    logMessage();
-    info("This is an info message.");
-    error("This is an error message.");
+    $log -> logMessage('ERROR', "This is an error message.");
+    $log -> info("This is an info message.");
+    $log -> error("This is an error message.");
 ?>
