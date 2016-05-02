@@ -20,11 +20,11 @@
         }
         public function info ($logMessage)
         {
-            logMessage("INFO",$logMessage);
+            $this -> logMessage("INFO",$logMessage);
         }
         public function error ($logMessage)
         {
-            logMessage("ERROR", $logMessage);
+            $this -> logMessage("ERROR", $logMessage);
         }
     }
 ?>
